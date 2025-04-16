@@ -200,7 +200,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -26.768694, y: 20.3, z: -10}
+  m_LocalPosition: {x: -25.680485, y: 20.3, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -931,7 +931,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!252 &850545377
 SurfaceEffector2D:
@@ -1014,13 +1014,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1112023315}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -26.768694, y: 20.3, z: -10}
+  m_LocalPosition: {x: -25.680485, y: 20.3, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 644884675}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1165284326
 GameObject:
@@ -1034,6 +1034,7 @@ GameObject:
   - component: {fileID: 1165284327}
   - component: {fileID: 1165284331}
   - component: {fileID: 1165284332}
+  - component: {fileID: 1165284333}
   m_Layer: 0
   m_Name: GameCharacter
   m_TagString: Untagged
@@ -1077,7 +1078,7 @@ Transform:
   - {fileID: 1351135115}
   - {fileID: 1743437616}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -23.909}
 --- !u!70 &1165284331
 CapsuleCollider2D:
@@ -1111,6 +1112,19 @@ CircleCollider2D:
   m_Offset: {x: 0.66, y: -0.16}
   serializedVersion: 2
   m_Radius: 0.37
+--- !u!114 &1165284333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165284326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a72d55f922779ab4ca70e68b8c037425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  torqueAmount: 1
 --- !u!1 &1351135114
 GameObject:
   m_ObjectHideFlags: 0
