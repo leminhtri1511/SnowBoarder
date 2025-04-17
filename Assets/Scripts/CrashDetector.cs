@@ -12,12 +12,13 @@ public class CrashDetector : MonoBehaviour
     {
         if (collision.CompareTag("Ground"))
         {
+            FindObjectOfType<PlayerController>().DisableControls();
             crashEffect.Play();
             Invoke("ReloadScene", reloadDelay);
         }
     }
 
-    void ReloadScene()
+    public void ReloadScene()
     {
         SceneManager.LoadScene(0);
     }
